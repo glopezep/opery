@@ -1,6 +1,6 @@
 # opery
 
-> Operay is a ORM wrapper to facilitate the use of repository pattern so that code doesn't break. Based on adapters pattern 
+> Operay is a ORM switcher to facilitate the use of repository pattern so that code doesn't break. Based on adapters pattern 
 
 ## Usage
 
