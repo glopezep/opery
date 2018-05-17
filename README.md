@@ -1,6 +1,21 @@
 # opery
 
-> Operay is a ORM switcher to facilitate the use of repository pattern so that code doesn't break. Based on adapters pattern 
+> Operay is a best ORM switcher 
+
+
+## Features
+
+* Makes easy the use of repository pattern in this way code doesn't break. 
+
+* Based on adapters pattern.
+
+
+## Install 
+
+```bash
+npm install --save opery
+```
+
 
 ## Usage
 
