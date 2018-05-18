@@ -2,10 +2,6 @@
 
 const getServices = require('./lib/getServices')
 
-function use (adapter) {
-
-}
-
 async function init (options) {
   const db = { services: {} }
   const { adapter } = options
@@ -17,15 +13,16 @@ async function init (options) {
   Object.keys(models).forEach(modelName => {
     db.services[modelName] = baseService(models[modelName])
   })
-
-   Object.keys(models).forEach(modelName => {
-    const service = services[modelName]
+  Object.keys(models).forEach(modelName => {
+    let service = services[modelName]
 
     if (!service) {
       return
     }
 
-    db.services[modelName] = service(models[modelName])
+    service = service(models[modelName])
+    db.services[modelName] = Object.assign({}, db.services[modelName], service)
+  
   })
 
   return db
