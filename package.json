@@ -1,0 +1,23 @@
+{
+  "name": "opery",
+  "version": "0.0.1",
+  "description": "Opery is the best ORM abstraction tool to create database modules for your projects.",
+  "main": "index.js",
+  "directories": {
+    "example": "examples",
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/glopezep/opery.git"
+  },
+  "author": "Guillermo Lopez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/glopezep/opery/issues"
+  },
+  "homepage": "https://github.com/glopezep/opery#readme"
+}

@@ -55,3 +55,8 @@ opery.init(options).then(db => {
 ## How to create an adapater
 
 ## API
+
+
+## License
+
+MIT © [Guillermo Lopez](http://www.guillermolopez.net)
