@@ -1,13 +1,13 @@
 # opery
 
-> Operay is a best ORM switcher 
+> Opery is the best ORM abstraction tool to create database modules for your projects.
 
 
 ## Features
 
 * Makes easy the use of repository pattern in this way code doesn't break. 
-
 * Based on adapters pattern.
+* Allows to change orm easily
 
 
 ## Install 
@@ -51,5 +51,7 @@ opery.init(options).then(db => {
   })
 })
 ```
+
+## How to create an adapater
 
 ## API
