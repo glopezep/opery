@@ -21,7 +21,7 @@ npm install --save opery
 
 ```js
 const opery = require('opery')
-const sequelizeAdapter = require('operySequelizeAdapater')
+const sequelizeAdapter = require('opery-sequelize-adapter')
 
 const options = {
   database: 'test',
