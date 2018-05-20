@@ -8,7 +8,7 @@
 * Based on adapters pattern.
 * Allows to change orm easily
 
-## Install 
+## Installation 
 
 ```bash
 npm install --save opery
@@ -21,7 +21,7 @@ const opery = require('opery')
 const sequelizeAdapter = require('opery-sequelize-adapter')
 
 const options = {
-  orm: {
+  orm: { // necessary configuration for setup ORM (NODE: in this case sequelize).
     database: 'test',
     username: 'my_user',
     password: 'secret',
@@ -52,6 +52,10 @@ opery.init(options).then(db => {
 ```
 
 ## Configuration
+- `orm`_(Object)_ ORM configuration object `NOTE:` Only Sequelize is support currently
+- `adapter` _(Adapter)_ Opery adapater object
+- `modelsDir` _(String)_ Models directory
+- `servicesDir` _(String)_ Services directory
 
 ## Services
 
@@ -65,7 +69,23 @@ opery.init(options).then(db => {
 
 ### How to create an adapater
 
+### Adapter list
+
+- Sequelize Adpater 
+  - [github](https://github.com/glopezep/opery-sequelize-adapater)
+  - [npm](https://www.npmjs.com/package/opery-sequelize-adapter)
+
 ## API
+
+## Contributing
+
+[Fork](https://help.github.com/articles/fork-a-repo/) this repository to your own GitHub account and then [clone](https://help.github.com/articles/cloning-a-repository/) it to your local device
+
+As always, you can run the AVA and ESLint tests using: npm test
+
+## Author
+
+- Guillermo López [@glopezep](http://www.guillermolopez.net)
 
 ## License
 
