@@ -4,7 +4,7 @@
 
 ## Features
 
-* Makes easy the use of repository pattern in this way code doesn't break. 
+* Makes easy the use of repository pattern in this way code doesn't break whenever you want     change the ORM or or refactoring some method to communicate with the database. 
 * Based on adapters pattern.
 * Allows to change orm easily
 
