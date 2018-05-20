@@ -1,6 +1,6 @@
 'use strict'
 
-const Opery = require('opery')
+const Opery = require('./lib/opery')
 
 module.exports = new Opery()
 
