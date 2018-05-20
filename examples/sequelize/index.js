@@ -1,7 +1,7 @@
 'use strict'
 
 const opery = require('../../')
-const sequelizeAdapter = require('opery-sequelize-adapter')
+const sequelizeAdapter = require('opery-sequelize-adapater')
 
 const options = {
   orm: {
