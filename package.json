@@ -1,6 +1,6 @@
 {
   "name": "opery",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Opery is the best ORM abstraction tool to create database modules for your projects.",
   "main": "index.js",
   "directories": {
@@ -19,5 +19,6 @@
   "bugs": {
     "url": "https://github.com/glopezep/opery/issues"
   },
-  "homepage": "https://github.com/glopezep/opery#readme"
+  "homepage": "https://github.com/glopezep/opery#readme",
+  "keywords": ["orm", "database", "wrapper", "services"]
 }
