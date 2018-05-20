@@ -21,7 +21,7 @@ const opery = require('opery')
 const sequelizeAdapter = require('opery-sequelize-adapter')
 
 const options = {
-  orm: { // necessary configuration for setup ORM (NODE: in this case sequelize).
+  orm: { // necessary configuration for setup ORM (NOTE: in this case sequelize).
     database: 'test',
     username: 'my_user',
     password: 'secret',
