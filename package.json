@@ -1,6 +1,6 @@
 {
   "name": "opery",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Opery is the best ORM abstraction tool to create database modules for your projects.",
   "main": "index.js",
   "directories": {

@@ -57,6 +57,8 @@ opery.init(options).then(db => {
 
 ### What is a service?
 
+### How to create a service?
+
 ## Adapters
 
 ### What is an adapater?
