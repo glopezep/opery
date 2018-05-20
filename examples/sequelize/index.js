@@ -4,7 +4,7 @@ const opery = require('../../')
 const sequelizeAdapter = require('opery-sequelize-adapter')
 
 const options = {
-  db: {
+  orm: {
     database: 'test',
     username: 'root',
     password: '',

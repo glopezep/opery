@@ -5,7 +5,7 @@ const getServices = require('./lib/getServices')
 async function init (options) {
   const db = { services: {} }
   const { adapter } = options
-  const orm = await adapter.setupOrm(options.db)
+  const orm = await adapter.setupOrm(options.orm)
   const models = await adapter.getModels(orm, options.modelsDir)
   const services = await getServices(options.servicesDir)
   const baseService = options.adapter.baseService

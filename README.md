@@ -2,20 +2,17 @@
 
 > Opery is the best ORM abstraction tool to create database modules for your projects.
 
-
 ## Features
 
 * Makes easy the use of repository pattern in this way code doesn't break. 
 * Based on adapters pattern.
 * Allows to change orm easily
 
-
 ## Install 
 
 ```bash
 npm install --save opery
 ```
-
 
 ## Usage
 
@@ -24,11 +21,13 @@ const opery = require('opery')
 const sequelizeAdapter = require('opery-sequelize-adapter')
 
 const options = {
-  database: 'test',
-  username: 'my_user',
-  password: 'secret',
-  host: 'localhost',
-  dialect: 'mysql',
+  orm: {
+    database: 'test',
+    username: 'my_user',
+    password: 'secret',
+    host: 'localhost',
+    dialect: 'mysql',
+  },
   adapter: sequelizeAdapter,
   modelsDir: '/path/to/models',
   servicesDir: '/path/to/services',
@@ -52,10 +51,19 @@ opery.init(options).then(db => {
 })
 ```
 
-## How to create an adapater
+## Configuration
+
+## Services
+
+### What is a service?
+
+## Adapters
+
+### What is an adapater?
+
+### How to create an adapater
 
 ## API
-
 
 ## License
 
