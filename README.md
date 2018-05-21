@@ -61,6 +61,10 @@ opery.init(options).then(db => {
 
 ### What is a service?
 
+Services are logical abstraction for managing workloads.
+
+For example, if you're working in an API REST and you have to call a user by username, it would be simpler to contain that logic somewhere and just call the method to obtain that username.
+
 ### How to create a service?
 
 ## Adapters
