@@ -63,7 +63,7 @@ opery.init(options).then(db => {
 
 Services are logical abstraction for managing workloads.
 
-For example, if you're working in an API REST and you have to call a user by username, it would be simpler to contain that logic somewhere and just call the method to obtain that username.
+For example, if you're working in an API REST and you have to call a user by username, it would be simpler to contain that logic somewhere and just call the method to obtain that user by username.
 
 ### How to create a service?
 
