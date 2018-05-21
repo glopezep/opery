@@ -81,6 +81,53 @@ For example, if you're working in an API REST and you have to call a user by use
 
 ## API
 
+### opery
+
+#### `base(service: Function. [...service: Function]) -> void`
+
+Register one or several services globally (for all models).
+
+```js
+
+opery.base(CustomService)
+
+opery.init(options).then(db => {
+  const result = await db.SomeModel.customServiceMethod()
+})
+
+```
+
+#### `use(service: Function. [...service: Function]) -> void`
+
+Register one or several services for specific models.
+
+```js
+
+opery.use(auth)
+
+opery.init(options).then(db => {
+  const result = await db.Auth.authMethod()
+})
+
+```
+
+#### `init(options: Object) -> db: Object`
+
+Initialize opery module to work with database layer.
+
+- `orm`_(Object)_ ORM configuration object `NOTE:` Only Sequelize is support currently
+- `adapter` _(Adapter)_ Opery adapater object
+- `modelsDir` _(String)_ Models directory
+- `servicesDir` _(String)_ Services directory
+
+```js
+
+opery.init(options).then(db => {
+  // do something with db module
+})
+
+```
+
 ## Contributing
 
 [Fork](https://help.github.com/articles/fork-a-repo/) this repository to your own GitHub account and then [clone](https://help.github.com/articles/cloning-a-repository/) it to your local device
