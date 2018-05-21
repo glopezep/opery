@@ -93,7 +93,7 @@ Register one or several services globally (for all models).
 opery.base(CustomService)
 
 opery.init(options).then(db => {
-  const result = await db.SomeModel.customServiceMethod()
+  const result = await db.services.SomeModel.customServiceMethod()
 })
 
 ```
@@ -107,7 +107,7 @@ Register one or several services for specific models.
 opery.use(auth)
 
 opery.init(options).then(db => {
-  const result = await db.Auth.authMethod()
+  const result = await db.services.Auth.authMethod()
 })
 
 ```
