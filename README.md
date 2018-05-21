@@ -52,10 +52,11 @@ opery.init(options).then(db => {
 ```
 
 ## Configuration
-- `orm`_(Object)_ ORM configuration object `NOTE:` Only Sequelize is support currently
-- `adapter` _(Adapter)_ Opery adapater object
-- `modelsDir` _(String)_ Models directory
-- `servicesDir` _(String)_ Services directory
+- `options` _(Object)_
+  - `orm`_(Object)_ ORM configuration object `NOTE:` Only Sequelize is support currently
+  - `adapter` _(Adapter)_ Opery adapater object
+  - `modelsDir` _(String)_ Models directory
+  - `servicesDir` _(String)_ Services directory
 
 ## Services
 
@@ -115,10 +116,11 @@ opery.init(options).then(db => {
 
 Initialize opery module to work with database layer.
 
-- `orm`_(Object)_ ORM configuration object `NOTE:` Only Sequelize is support currently
-- `adapter` _(Adapter)_ Opery adapater object
-- `modelsDir` _(String)_ Models directory
-- `servicesDir` _(String)_ Services directory
+- `options` _(Object)_
+  - `orm`_(Object)_ ORM configuration object `NOTE:` Only Sequelize is support currently
+  - `adapter` _(Adapter)_ Opery adapater object
+  - `modelsDir` _(String)_ Models directory
+  - `servicesDir` _(String)_ Services directory
 
 ```js
 
