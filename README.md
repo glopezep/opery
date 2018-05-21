@@ -87,9 +87,11 @@ For example, if you're working in an API REST and you have to call a user by use
 
 As always, you can run the AVA and ESLint tests using: npm test
 
-## Author
+## Authors
 
 - Guillermo López [@glopezep](http://www.guillermolopez.net)
+
+- Jorge Cuevas [@jcuevas012](https://github.com/jcuevas012)
 
 ## License
 
