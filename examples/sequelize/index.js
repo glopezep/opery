@@ -16,6 +16,7 @@ const options = {
   servicesDir: './services'
 }
 
+
 opery.init(options).then(db => {
   console.log(db)
 }).catch(err => {
