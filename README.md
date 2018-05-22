@@ -81,7 +81,7 @@ this is a list of services created by the community
 
 ### What is an adapter?
 
-### How to create an adapter
+### How to create an adapter?
 
 ### Adapter list
 
