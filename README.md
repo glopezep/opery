@@ -4,7 +4,7 @@
 
 ## Features
 
-* Makes easy the use of repository pattern in this way code doesn't break whenever you want     change the ORM or or refactoring some method to communicate with the database. 
+* Makes easy the use of repository pattern in this way code doesn't break whenever you      want change the ORM or or refactoring some method to communicate with the database. 
 * Based on adapters pattern.
 * Allows to change orm easily
 
@@ -68,6 +68,15 @@ For example, if you're working in an API REST and you have to call a user by use
 
 ### How to create a service?
 
+### Services list
+
+Services can be created by anyone. 
+this is a list of services created by the community
+
+- Sequelize Base Service 
+    [github](https://github.com/glopezep/opery-sequelize-base-service)
+    [npm](https://www.npmjs.com/package/opery-sequelize-base-service)
+
 ## Adapters
 
 ### What is an adapater?
@@ -76,9 +85,12 @@ For example, if you're working in an API REST and you have to call a user by use
 
 ### Adapter list
 
+Adpapters can be created by anyone. 
+this is a list of adapters created by the community
+
 - Sequelize Adpater 
-  - [github](https://github.com/glopezep/opery-sequelize-adapater)
-  - [npm](https://www.npmjs.com/package/opery-sequelize-adapter)
+    [github](https://github.com/glopezep/opery-sequelize-adapater)
+    [npm](https://www.npmjs.com/package/opery-sequelize-adapter)
 
 ## API
 
