@@ -79,9 +79,9 @@ this is a list of services created by the community
 
 ## Adapters
 
-### What is an adapater?
+### What is an adapter?
 
-### How to create an adapater
+### How to create an adapter
 
 ### Adapter list
 
