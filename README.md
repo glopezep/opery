@@ -98,13 +98,13 @@ opery.init(options).then(db => {
 
 ```
 
-#### `use(service: Function. [...service: Function]) -> void`
+#### `service(service: Function. [...service: Function]) -> void`
 
 Register one or several services for specific models.
 
 ```js
 
-opery.use(auth)
+opery.service(auth)
 
 opery.init(options).then(db => {
   const result = await db.services.Auth.authMethod()
