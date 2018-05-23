@@ -93,11 +93,17 @@ this is a list of adapters created by the community
     [npm](https://www.npmjs.com/package/opery-sequelize-adapter)
 
 
-## Hooks `NEW`
+## Hooks
 
-### beforeRun() -> Promise
+Currently Hooks are proposal and internal use.
 
-### afterRun() -> Promise
+### `beforeRun(callback: Function) -> Promise`
+
+Do something before run opery.
+
+### `afterRun(callback: Function) -> Promise`
+
+Do something after run opery.
 
 ## API
 
