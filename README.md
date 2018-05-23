@@ -33,7 +33,7 @@ const options = {
   servicesDir: '/path/to/services',
 }
 
-opery.init(options).then(db => {
+opery.run(options).then(db => {
   db.services.SomeModel.create(data, (err, created) => {
     if (err) {
       // do something with err
@@ -92,6 +92,13 @@ this is a list of adapters created by the community
     [github](https://github.com/glopezep/opery-sequelize-adapater)
     [npm](https://www.npmjs.com/package/opery-sequelize-adapter)
 
+
+## Hooks `NEW`
+
+### beforeRun() -> Promise
+
+### afterRun() -> Promise
+
 ## API
 
 ### opery
@@ -104,7 +111,7 @@ Register one or several services globally (for all models).
 
 opery.base(CustomService)
 
-opery.init(options).then(db => {
+opery.run(options).then(db => {
   const result = await db.services.SomeModel.customServiceMethod()
 })
 
@@ -118,13 +125,13 @@ Register one or several services for specific models.
 
 opery.service(auth)
 
-opery.init(options).then(db => {
+opery.run(options).then(db => {
   const result = await db.services.Auth.authMethod()
 })
 
 ```
 
-#### `init(options: Object) -> db: Object`
+#### `run(options: Object) -> db: Object`
 
 Initialize opery module to work with database layer.
 
@@ -136,7 +143,7 @@ Initialize opery module to work with database layer.
 
 ```js
 
-opery.init(options).then(db => {
+opery.run(options).then(db => {
   // do something with db module
 })
 
