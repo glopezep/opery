@@ -29,7 +29,7 @@ opery.base(baseService)
 opery.service(user, group)
 opery.service(role)
 
-opery.init(config).then(db => {
+opery.run(config).then(db => {
   
   console.log(db)
 })

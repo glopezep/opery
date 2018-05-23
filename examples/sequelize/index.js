@@ -17,7 +17,7 @@ const options = {
 }
 
 
-opery.init(options).then(db => {
+opery.run(options).then(db => {
   console.log(db)
 }).catch(err => {
   console.log(err)
