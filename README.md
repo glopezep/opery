@@ -97,13 +97,31 @@ this is a list of adapters created by the community
 
 Currently Hooks are proposal and internal use.
 
-### `beforeRun(callback: Function) -> Promise`
+### opery
+
+#### `beforeRun(callback: Function) -> Promise`
 
 Do something before run opery.
 
-### `afterRun(callback: Function) -> Promise`
+```js
+
+opery.beforeRun(() => {
+  // do something
+})
+
+```
+
+##### `afterRun(callback: Function) -> Promise`
 
 Do something after run opery.
+
+```js
+
+opery.afterRun(() => {
+  // do something
+})
+
+```
 
 ## API
 
