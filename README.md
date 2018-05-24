@@ -74,8 +74,12 @@ Services can be created by anyone.
 this is a list of services created by the community
 
 - Sequelize Base Service 
-    [github](https://github.com/glopezep/opery-sequelize-base-service)
+    [github](https://github.com/glopezep/opery-sequelize-base-service) -
     [npm](https://www.npmjs.com/package/opery-sequelize-base-service)
+
+- Sequelize User Auth Service 
+    [github](https://github.com/glopezep/opery-sequelize-user-auth-service) -
+    [npm](https://www.npmjs.com/package/opery-sequelize-user-auth-service)
 
 ## Adapters
 
