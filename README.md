@@ -102,6 +102,14 @@ we'll see that in the section on how to use a service.
 
 ### How to use a service?
 
+There are two ways to use Opery Services.
+
+The First is setting service globally so that it affects all models.
+
+we do this using the base method. 
+
+`opery.base(service: Function. [...service: Function]) -> void`
+
 
 ### Services list
 
