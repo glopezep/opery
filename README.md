@@ -100,6 +100,8 @@ function user (Model) {
 We already created our user service. Our next step is to use the service.
 we'll see that in the section on how to use a service.
 
+### How to use a service?
+
 
 ### Services list
 
