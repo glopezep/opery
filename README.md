@@ -68,6 +68,39 @@ For example, if you're working in an API REST and you have to call a user by use
 
 ### How to create a service?
 
+Create a opery service is easy, Services are simply a function that return an Javascript Literal Object.
+
+`IMPORTANT:` Service function name is really important. this name will depend if the service works or not. this name must be equal to the name of the model with which we are going to work since service function receives by parameter the model that is equal to the name of service function
+
+Example:
+
+`In this example we will work with Sequelize.`
+
+imagine that we already have a project set up like this in example list, and we have created our user model.
+
+Our next step will be to create a service to work with that model.
+
+Let's go to the code.
+
+```js
+
+// this is our user service
+function user (Model) {
+  return {
+    async getUserByEmail (email, options) {
+      const user = await Model.findOne({ where: { email }, ...options })
+    },
+    async getUserByUsername () {
+      //...
+    }
+  }
+}
+```
+
+We already created our user service. Our next step is to use the service.
+we'll see that in the section on how to use a service.
+
+
 ### Services list
 
 Services can be created by anyone. 
