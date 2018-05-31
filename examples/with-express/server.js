@@ -1,22 +1,14 @@
 'use strict'
 
 const express = require('express')
-const setupDatabase = require('./db')
+const setupDatabase = require('./middlewares/setupDatabase')
 
 const app = express()
 
-let db = null
-
-app.use('*', async (req, res, next) => {
-  if (!db) {
-    db = await setupDatabase()
-  }
-  
-  next()
-})
+app.use(setupDatabase)
 
 app.get('/api/users', async (req, res) => {
-  const users = await db.services.User.findAll()
+  const users = await req.db.services.User.findAll()
   res.send(users)
 })
 
