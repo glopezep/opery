@@ -158,7 +158,7 @@ opery.beforeRun(() => {
 
 ```
 
-##### `afterRun(callback: Function) -> Promise`
+#### `afterRun(callback: Function) -> Promise`
 
 Do something after run opery.
 
